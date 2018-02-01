@@ -1,20 +1,13 @@
 <template>
 	<div class="Home">
 		<header class="masthead">
-      <b-navbar toggleable="md" type="light" variant="light" class="nav">
-        <b-navbar-brand to="/" class="brand">USPON</b-navbar-brand>
-        <b-collapse is-nav id="nav_collapse">
-          <b-navbar-nav>
-            <b-nav-item to="/contact">Contact</b-nav-item>
-          </b-navbar-nav>
-        </b-collapse>
-        <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-      </b-navbar>
-      <div class="logo"></div>
+      <div class="intro-text">
+        <div class="intro-lead-in">Udruženje slobodnog prosvećenog naroda.</div>
+        <div class="intro-main">USPON</div>
+      </div>
     </header>
     <section class="content">
       <section class="about">
-        some text
       </section>
     </section>
 	</div>
@@ -27,49 +20,33 @@ export default {
 </script>
 
 <style>
-.masthead {
+.Home {
   width: 700px;
-  height: 100vh;
   margin-left: calc((100% - 700px)/2);
 }
-.masthead .nav {
-  border-radius: 5px;
-  margin-top: 10px;
+.masthead .intro-text {
+  margin-top: 50%;
+  margin-bottom: 50%;
+  text-align: center;
 }
-.masthead .nav .brand {
-  display: none;
+.masthead .intro-text .intro-lead-in {
+  font-size: 1.1em;
 }
-.masthead .logo {
-  width: 100%;
-  height: 100%;
-  margin-left: 0;
-  background-image: url('../assets/uspon-logo-latin.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%;
+.masthead .intro-text .intro-main {
+  font-size: 6em;
 }
 
 @media screen and (max-width: 767px) {
-	.masthead {
+  .Home {
     width: 100%;
-    height: 80vh;
     margin-left: 0;
-    margin-bottom: 10vh;
-	}
-  .masthead .nav {
-    border-radius: 0;
-    margin-top: 0;
   }
-  .masthead .nav .brand {
-    display: inline;
+  .masthead .intro-text .intro-main {
+    font-size: 4.5em;
   }
-  .masthead .nav #nav_collapse {
-    font-size: 1.1em;
-    text-align: center;
-  }
-  .masthead .logo {
-    width: 100%;
-    height: 100%;
+  .content {
+    width: 95%;
+    margin-left: calc((100% - 95%)/2);
   }
 }
 </style>
