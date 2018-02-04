@@ -25,7 +25,7 @@ export default {
   margin-left: calc((100% - 700px)/2);
 }
 .masthead .intro-text {
-  margin-top: 50%;
+  margin-top: calc((50% - 106px)/2);
   margin-bottom: 50%;
   text-align: center;
 }
@@ -40,6 +40,9 @@ export default {
   .Home {
     width: 100%;
     margin-left: 0;
+  }
+  .masthead .intro-text {
+    margin-top: 50%;
   }
   .masthead .intro-text .intro-main {
     font-size: 4.5em;

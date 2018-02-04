@@ -6,6 +6,11 @@
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav class="ml-auto">
           <b-nav-item to="/" exact>Početna</b-nav-item>
+          <b-nav-item-dropdown text="Timovi" id="timoviDropdown">
+            <b-dropdown-item exact class="dropdownItem">Knjizevni tim</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Muzicki tim</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Tehnoloski tim</b-dropdown-item>
+          </b-nav-item-dropdown>
           <b-nav-item to="/contact" exact>Kontakt</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
@@ -50,8 +55,13 @@ export default {
   width: 70px;
   height: 70px;
 }
+
+#timoviDropdown .dropdownItem {
+  outline: none;
+}
 footer {
   margin-top: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
