@@ -1,10 +1,14 @@
 <template>
 	<div class="Home">
 		<header class="masthead">
-      <div class="intro-text">
-        <div class="intro-lead-in">Udruženje slobodnog prosvećenog naroda.</div>
-        <div class="intro-main">USPON</div>
-      </div>
+      <b-container class="intro-text">
+        <b-row align-v="center" align-h="center" class="intro-text-container text-center">
+          <b-col col>
+            <p class="intro-lead-in">Udruženje slobodnog prosvećenog naroda.</p>
+            <p class="intro-main">USPON</p>
+          </b-col>
+        </b-row>
+      </b-container>
     </header>
     <section class="content">
       <section class="about">
@@ -24,15 +28,19 @@ export default {
   width: 700px;
   margin-left: calc((100% - 700px)/2);
 }
-.masthead .intro-text {
-  margin-top: calc((50% - 106px)/2);
-  margin-bottom: 50%;
-  text-align: center;
+.masthead {
+  height: calc(100vh - 106px);
 }
-.masthead .intro-text .intro-lead-in {
+.masthead .intro-text {
+  height: 100%;
+}
+.masthead .intro-text .intro-text-container {
+  height: 100%;
+}
+.intro-lead-in {
   font-size: 1.1em;
 }
-.masthead .intro-text .intro-main {
+.intro-main {
   font-size: 6em;
 }
 
@@ -41,9 +49,9 @@ export default {
     width: 100%;
     margin-left: 0;
   }
-  .masthead .intro-text {
+  /*.masthead .intro-text {
     margin-top: 50%;
-  }
+  }*/
   .masthead .intro-text .intro-main {
     font-size: 4.5em;
   }
