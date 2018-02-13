@@ -5,20 +5,27 @@
       <b-navbar-brand to="/" class="brand"><img src="./assets/uspon-logo-latin.png" alt="USPON" /></b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav class="ml-auto">
-          <b-nav-item to="/" exact>Početna</b-nav-item>
+          <b-nav-item to="/" exact>Почетна</b-nav-item>
           <b-nav-item-dropdown text="Timovi" id="timoviDropdown">
-            <b-dropdown-item exact class="dropdownItem">Knjizevni tim</b-dropdown-item>
-            <b-dropdown-item exact class="dropdownItem">Muzicki tim</b-dropdown-item>
-            <b-dropdown-item exact class="dropdownItem">Tehnoloski tim</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Књижевни</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Музички</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Социолошки</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Ликовни</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Драмски</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Научни</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Математички</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Историјски</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Спортски</b-dropdown-item>
+            <b-dropdown-item exact class="dropdownItem">Технолошки</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item to="/contact" exact>Kontakt</b-nav-item>
+          <b-nav-item to="/contact" exact>Контакт</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
     <router-view/>
     <footer>
       <span>MIT License © USPON</span><br/>
-      <span>Hosted on <a href="https://github.com/uspon/uspon.github.io">GitHub.com</a></span><br/>
+      <span>Hosted on <a href="https://github.com">GitHub.com</a></span><br/>
     </footer>
   </div>
 </template>
